@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-/* Program: Rollin The Dice Ver 1.0
+/* Program: Rollin The Dice Ver 1.01
  * Programmer: William Mitchell
- * Date of last update: 12/31/2013
+ * Date of last update: 01/02/2014
  * Course: POS/409
  * Instructor: Dr. Brad Purdy*/
 
@@ -20,8 +20,9 @@ namespace Rollin_The_Dice
 {
     public partial class diceForm : Form
     {
-        //declares datatable as class variable used in several methods
-        private DataTable tblResults = new DataTable();
+
+        private DataTable tblResults = new DataTable(); //declares datatable as class variable used in several methods
+        private DiceDAO data = new DiceDAO(); //instantiates DiceDAO class
                
         public diceForm()
         {
@@ -113,7 +114,7 @@ namespace Rollin_The_Dice
             }
             else //saves the roll data
             {
-                var data = new DiceDAO(); //instantiates DiceDAO class
+                
                 data.saveToFile("resultsFile.txt", tblResults); //calls save method from DiceDAO class
                 this.sslInfo.Text = "The results of your rolls have been saved"; //updates status strip
             }
@@ -125,7 +126,6 @@ namespace Rollin_The_Dice
             resetForm(); //calls reset form method
             defineColumns(); //calls define columns method
             tblResults.Rows.Clear(); //clears the rows from the datatable
-            var data = new DiceDAO(); //instantiates DiceDAO class
             data.loadFromFile("resultsFile.txt", tblResults); //calls load method from DiceDAO class
             this.dgResults.DataSource = tblResults; //displays results in datagridview
             this.sslInfo.Text = "The results of your rolls have been loaded"; //updates status strip
