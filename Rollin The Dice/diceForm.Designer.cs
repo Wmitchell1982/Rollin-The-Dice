@@ -38,6 +38,17 @@
             this.ttInfo = new System.Windows.Forms.ToolTip(this.components);
             this.ssInfo = new System.Windows.Forms.StatusStrip();
             this.sslInfo = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblTwoRolled = new System.Windows.Forms.Label();
+            this.lblThreeRolled = new System.Windows.Forms.Label();
+            this.lblFourRolled = new System.Windows.Forms.Label();
+            this.lblFiveRolled = new System.Windows.Forms.Label();
+            this.lblSixRolled = new System.Windows.Forms.Label();
+            this.lblSevenRolled = new System.Windows.Forms.Label();
+            this.lblEightRolled = new System.Windows.Forms.Label();
+            this.lblNineRolled = new System.Windows.Forms.Label();
+            this.lblTenRolled = new System.Windows.Forms.Label();
+            this.lblElevenRolled = new System.Windows.Forms.Label();
+            this.lblTwelveRolled = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgResults)).BeginInit();
             this.ssInfo.SuspendLayout();
             this.SuspendLayout();
@@ -108,9 +119,9 @@
             // 
             this.ssInfo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sslInfo});
-            this.ssInfo.Location = new System.Drawing.Point(0, 365);
+            this.ssInfo.Location = new System.Drawing.Point(0, 551);
             this.ssInfo.Name = "ssInfo";
-            this.ssInfo.Size = new System.Drawing.Size(477, 22);
+            this.ssInfo.Size = new System.Drawing.Size(485, 22);
             this.ssInfo.TabIndex = 6;
             this.ssInfo.Text = "statusStrip1";
             // 
@@ -119,11 +130,123 @@
             this.sslInfo.Name = "sslInfo";
             this.sslInfo.Size = new System.Drawing.Size(0, 17);
             // 
+            // lblTwoRolled
+            // 
+            this.lblTwoRolled.AutoSize = true;
+            this.lblTwoRolled.Location = new System.Drawing.Point(12, 374);
+            this.lblTwoRolled.Name = "lblTwoRolled";
+            this.lblTwoRolled.Size = new System.Drawing.Size(35, 13);
+            this.lblTwoRolled.TabIndex = 7;
+            this.lblTwoRolled.Text = "label1";
+            // 
+            // lblThreeRolled
+            // 
+            this.lblThreeRolled.AutoSize = true;
+            this.lblThreeRolled.Location = new System.Drawing.Point(12, 403);
+            this.lblThreeRolled.Name = "lblThreeRolled";
+            this.lblThreeRolled.Size = new System.Drawing.Size(35, 13);
+            this.lblThreeRolled.TabIndex = 8;
+            this.lblThreeRolled.Text = "label2";
+            // 
+            // lblFourRolled
+            // 
+            this.lblFourRolled.AutoSize = true;
+            this.lblFourRolled.Location = new System.Drawing.Point(12, 432);
+            this.lblFourRolled.Name = "lblFourRolled";
+            this.lblFourRolled.Size = new System.Drawing.Size(35, 13);
+            this.lblFourRolled.TabIndex = 9;
+            this.lblFourRolled.Text = "label3";
+            // 
+            // lblFiveRolled
+            // 
+            this.lblFiveRolled.AutoSize = true;
+            this.lblFiveRolled.Location = new System.Drawing.Point(12, 461);
+            this.lblFiveRolled.Name = "lblFiveRolled";
+            this.lblFiveRolled.Size = new System.Drawing.Size(35, 13);
+            this.lblFiveRolled.TabIndex = 10;
+            this.lblFiveRolled.Text = "label4";
+            // 
+            // lblSixRolled
+            // 
+            this.lblSixRolled.AutoSize = true;
+            this.lblSixRolled.Location = new System.Drawing.Point(12, 490);
+            this.lblSixRolled.Name = "lblSixRolled";
+            this.lblSixRolled.Size = new System.Drawing.Size(35, 13);
+            this.lblSixRolled.TabIndex = 11;
+            this.lblSixRolled.Text = "label5";
+            // 
+            // lblSevenRolled
+            // 
+            this.lblSevenRolled.AutoSize = true;
+            this.lblSevenRolled.Location = new System.Drawing.Point(12, 519);
+            this.lblSevenRolled.Name = "lblSevenRolled";
+            this.lblSevenRolled.Size = new System.Drawing.Size(35, 13);
+            this.lblSevenRolled.TabIndex = 12;
+            this.lblSevenRolled.Text = "label6";
+            // 
+            // lblEightRolled
+            // 
+            this.lblEightRolled.AutoSize = true;
+            this.lblEightRolled.Location = new System.Drawing.Point(247, 373);
+            this.lblEightRolled.Name = "lblEightRolled";
+            this.lblEightRolled.Size = new System.Drawing.Size(35, 13);
+            this.lblEightRolled.TabIndex = 13;
+            this.lblEightRolled.Text = "label7";
+            // 
+            // lblNineRolled
+            // 
+            this.lblNineRolled.AutoSize = true;
+            this.lblNineRolled.Location = new System.Drawing.Point(247, 403);
+            this.lblNineRolled.Name = "lblNineRolled";
+            this.lblNineRolled.Size = new System.Drawing.Size(35, 13);
+            this.lblNineRolled.TabIndex = 14;
+            this.lblNineRolled.Text = "label8";
+            // 
+            // lblTenRolled
+            // 
+            this.lblTenRolled.AutoSize = true;
+            this.lblTenRolled.Location = new System.Drawing.Point(247, 432);
+            this.lblTenRolled.Name = "lblTenRolled";
+            this.lblTenRolled.Size = new System.Drawing.Size(35, 13);
+            this.lblTenRolled.TabIndex = 15;
+            this.lblTenRolled.Text = "label9";
+            // 
+            // lblElevenRolled
+            // 
+            this.lblElevenRolled.AutoSize = true;
+            this.lblElevenRolled.Location = new System.Drawing.Point(247, 461);
+            this.lblElevenRolled.Name = "lblElevenRolled";
+            this.lblElevenRolled.Size = new System.Drawing.Size(41, 13);
+            this.lblElevenRolled.TabIndex = 16;
+            this.lblElevenRolled.Text = "label10";
+            this.lblElevenRolled.Visible = false;
+            // 
+            // lblTwelveRolled
+            // 
+            this.lblTwelveRolled.AutoSize = true;
+            this.lblTwelveRolled.Location = new System.Drawing.Point(247, 490);
+            this.lblTwelveRolled.Name = "lblTwelveRolled";
+            this.lblTwelveRolled.Size = new System.Drawing.Size(41, 13);
+            this.lblTwelveRolled.TabIndex = 17;
+            this.lblTwelveRolled.Text = "label11";
+            this.lblTwelveRolled.Visible = false;
+            // 
             // diceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 387);
+            this.ClientSize = new System.Drawing.Size(485, 573);
+            this.Controls.Add(this.lblTwelveRolled);
+            this.Controls.Add(this.lblElevenRolled);
+            this.Controls.Add(this.lblTenRolled);
+            this.Controls.Add(this.lblNineRolled);
+            this.Controls.Add(this.lblEightRolled);
+            this.Controls.Add(this.lblSevenRolled);
+            this.Controls.Add(this.lblSixRolled);
+            this.Controls.Add(this.lblFiveRolled);
+            this.Controls.Add(this.lblFourRolled);
+            this.Controls.Add(this.lblThreeRolled);
+            this.Controls.Add(this.lblTwoRolled);
             this.Controls.Add(this.ssInfo);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnLoad);
@@ -153,6 +276,17 @@
         private System.Windows.Forms.ToolTip ttInfo;
         private System.Windows.Forms.StatusStrip ssInfo;
         private System.Windows.Forms.ToolStripStatusLabel sslInfo;
+        private System.Windows.Forms.Label lblTwoRolled;
+        private System.Windows.Forms.Label lblThreeRolled;
+        private System.Windows.Forms.Label lblFourRolled;
+        private System.Windows.Forms.Label lblFiveRolled;
+        private System.Windows.Forms.Label lblSixRolled;
+        private System.Windows.Forms.Label lblSevenRolled;
+        private System.Windows.Forms.Label lblEightRolled;
+        private System.Windows.Forms.Label lblNineRolled;
+        private System.Windows.Forms.Label lblTenRolled;
+        private System.Windows.Forms.Label lblElevenRolled;
+        private System.Windows.Forms.Label lblTwelveRolled;
     }
 }
 

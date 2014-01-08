@@ -28,7 +28,7 @@ namespace Rollin_The_Dice
             //try-catch block for io exception
             try
             {
-                StreamWriter resultsFileWriter; 
+                StreamWriter resultsFileWriter;
                 resultsFileWriter = File.CreateText(filename);
 
                 foreach (DataRow row in table.Rows)
@@ -47,22 +47,51 @@ namespace Rollin_The_Dice
             }
             catch (IOException e)
             {
-                MessageBox.Show(e.Message);                
+                MessageBox.Show(e.Message);
+            }
+
+        }
+
+        public void arrayToFile(string filename, int[] resultsArray)
+        {
+            try
+            {
+                StreamWriter resultsFileWriter;
+                resultsFileWriter = File.CreateText(filename);
+
+                foreach (int entry in resultsArray)
+                {
+                    resultsFileWriter.WriteLine(entry);
+                }
+                resultsFileWriter.Flush();
+                resultsFileWriter.Close();
+            }
+            catch (IOException e)
+            {
+                MessageBox.Show(e.Message);
             }
 
         }
 
         //method for loading from the file
-        public void loadFromFile(string filename, DataTable table)
+        public void loadFromFile(string filenameOne, string filenameTwo, DataTable table, int[] resultsArray)
         {
             //try-catch block for io exception
             try
             {
-                var lines = File.ReadAllLines(filename).ToList();
+                var lines = File.ReadAllLines(filenameOne).ToList();
+                string[] stringResultsArray = File.ReadAllLines(filenameTwo);
+
+
                 lines.ForEach(line => table.Rows.Add(line.Split((char)',')));
 
+                for (int count = 0; count < stringResultsArray.Length; count++)
+                {
+                    resultsArray[count] = int.Parse(stringResultsArray[count]);
+                }
+
             }
-            catch (IOException e)
+            catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }

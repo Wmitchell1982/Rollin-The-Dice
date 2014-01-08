@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
@@ -15,7 +14,7 @@ namespace Rollin_The_Dice
     public class DiceHandler
     {
         //method for rolling two dice, calls for arrays for the numbers on the side of the dice, the number of rolls and the datatable
-        public void rollTheDice(int[] dieOne, int[] dieTwo, int rollNumbers, DataTable table)
+        public void rollTheDice(int[] dieOne, int[] dieTwo, int rollNumbers, DataTable table, int[] resultsArray)
         {
             
             int dieOneResult; //sets variable for result of first die
@@ -31,7 +30,8 @@ namespace Rollin_The_Dice
                 dieTwoResult = dieTwo[randomRoll.Next(0, dieTwo.Length)];
                 diceResult = (dieOneResult + dieTwoResult);
                 table.Rows.Add(counter + 1, dieOneResult, dieTwoResult, diceResult);
-                
+                resultsArray[counter] = diceResult;
+                             
             }
 
 
